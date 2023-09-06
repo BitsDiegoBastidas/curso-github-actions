@@ -1,9 +1,11 @@
 name: hola-mundo
+run-name: Estoy aprendiendo Github Actions
 on: [push]
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Run shell script
-      - run: bash hola-mundo.sh
+        run: bash hola-mundo.sh
